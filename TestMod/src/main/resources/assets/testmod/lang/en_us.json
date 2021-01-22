@@ -1,3 +1,7 @@
 {
-	"item.testmod.ruby": "Ruby"
+	"item.testmod.ruby": "Ruby",
+	"item.testmod.cat": "Cat",
+	
+	"block.testmod.gif_block": "Gif",
+	"block.testmod.trippy": "Trippy"
 }
