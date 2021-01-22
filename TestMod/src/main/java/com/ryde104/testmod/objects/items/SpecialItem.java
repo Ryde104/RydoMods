@@ -31,9 +31,9 @@ public class SpecialItem extends Item{
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		if(KeyboardHelper.isHoldingShift())
 		{
-			tooltip.add(new StringTextComponent("Your Gay.zip"));
+			tooltip.add(new StringTextComponent("Test Worked"));
 		}else {
-			tooltip.add(new StringTextComponent("Hold SHIFT Dumbass"));
+			tooltip.add(new StringTextComponent("Hold SHIFT"));
 		}
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	}
