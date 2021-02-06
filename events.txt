@@ -1,0 +1,159 @@
+@Mod.EventBusSubscriber(modid = ExtraEnchants.MODID, bus = Bus.FORGE)
+	public static class UpstepEquipped 
+	{
+				
+		@SubscribeEvent
+		public static void doStuff(PlayerEvent event)
+		{
+			PlayerEntity playerIn = event.getPlayer();
+			if (playerIn.isCrouching())
+				if (playerIn.hasItemInSlot(EquipmentSlotType.HEAD)
+						&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+								playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0){
+					playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 600, 255));
+					
+			}
+		}
+		
+	}
+
+
+
+
+@SubscribeEvent
+		public void attackEntity(AttackEntityEvent event) {
+			Entity entityIn = event.getPlayer();
+		 entityIn.attackEntityFrom(DamageSource.IN_FIRE, 12);
+		}
+
+
+
+
+@SubscribeEvent
+		public static void doStuff(PlayerTickEvent event) {
+			PlayerEntity playerIn = event.player;
+			World worldIn = playerIn.world;
+			if (playerIn.hasItemInSlot(EquipmentSlotType.HEAD)
+					&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+							playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0) 
+			{
+				if(playerIn.isCrouching()) 
+				{
+					
+					playerIn.attackTargetEntityWithCurrentItem(playerIn);
+				}
+			}
+		}
+
+
+
+
+
+
+@SubscribeEvent
+		public static void doStuff(PlayerEvent event)
+		{
+			PlayerEntity playerIn = event.getPlayer();
+			
+			
+				if (playerIn.hasItemInSlot(EquipmentSlotType.HEAD)
+						&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+								playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0)
+				{
+					//Do Stuff
+					
+					playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 600, 255));
+					
+			
+				}
+		}
+
+
+
+@SubscribeEvent
+		public static void testJumpEvent(LivingJumpEvent event) {
+			
+			
+			LivingEntity livingEntity = event.getEntityLiving();
+			World world = livingEntity.getEntityWorld();
+			
+				livingEntity.setFire(12);
+			if (livingEntity.hasItemInSlot(EquipmentSlotType.HEAD)
+					&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+							livingEntity.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0) 
+			{
+				world.setBlockState(livingEntity.getPosition().add(0, 5, 0), BlockInit.BLOCK.get().getDefaultState());
+				livingEntity.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 600, 255));
+				livingEntity.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5000, 255));
+				livingEntity.setGlowing(true);
+			
+			}
+		}
+
+
+@SubscribeEvent
+		public static void testJumpEvent(LivingAttackEvent event) {
+			
+			
+			LivingEntity livingEntity = event.getEntityLiving();
+			World world = livingEntity.getEntityWorld();
+			livingEntity.setFire(12);
+				
+			if (livingEntity.hasItemInSlot(EquipmentSlotType.HEAD)
+					&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+							livingEntity.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0) 
+			{
+				
+				livingEntity.setFire(12);
+			
+			}
+		}
+
+
+
+
+
+
+
+
+		@SubscribeEvent
+		public void doStuff(PlayerEvent event, LivingAttackEvent event2)
+		{
+			PlayerEntity playerIn = event.getPlayer();
+			LivingEntity livingEntity = event2.getEntityLiving();
+			
+				if (playerIn.hasItemInSlot(EquipmentSlotType.HEAD)
+						&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+								playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0)
+				{
+					//Do Stuff
+					livingEntity.setFire(1);
+					playerIn.setFire(1);
+					
+			
+				}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+@SubscribeEvent
+			public static void doStuff(PlayerEvent event)
+			{
+				PlayerEntity playerIn = event.getPlayer();
+					if (playerIn.hasItemInSlot(EquipmentSlotType.HEAD)
+							&& EnchantmentHelper.getEnchantmentLevel(EnchantmentInit.TRACKING.get(),
+									playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD)) > 0)
+					{
+						playerIn.setFire(5);
+						
+			}
+		}

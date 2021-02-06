@@ -2,7 +2,7 @@ package com.ryde104.testmod.init;
 
 import com.ryde104.testmod.TestMod;
 import com.ryde104.testmod.TestMod.BlockTab;
-import com.ryde104.testmod.TestMod.TestItemTab;
+import com.ryde104.testmod.objects.blocks.BlockQuarry;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -23,6 +23,7 @@ public class BlockInit
 	public static final Block gif_block = null;
 	public static final Block trippy = null;
 	public static final Block orange_ore = null;
+	public static final Block quarry = null;
 
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event)
@@ -31,6 +32,7 @@ public class BlockInit
 		event.getRegistry().register(new Block(Block.Properties.create(Material.CAKE).hardnessAndResistance(0.7f, 15f).sound(SoundType.CLOTH).speedFactor(100)).setRegistryName("gif_block"));
 		event.getRegistry().register(new Block(Block.Properties.create(Material.CAKE).hardnessAndResistance(0.7f, 15f).sound(SoundType.CLOTH).speedFactor(100)).setRegistryName("trippy"));
 		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(0.7f, 15f).sound(SoundType.STONE)).setRegistryName("orange_ore"));
+		event.getRegistry().register(new BlockQuarry(Block.Properties.create(Material.IRON).hardnessAndResistance(0.7f, 15f).sound(SoundType.STONE)).setRegistryName("quarry"));
 	}
 	
 	@SubscribeEvent
@@ -40,5 +42,6 @@ public class BlockInit
 		event.getRegistry().register(new BlockItem(gif_block, new Item.Properties().maxStackSize(64).group(BlockTab.instance)).setRegistryName("gif_block"));
 		event.getRegistry().register(new BlockItem(trippy, new Item.Properties().maxStackSize(64).group(BlockTab.instance)).setRegistryName("trippy"));
 		event.getRegistry().register(new BlockItem(orange_ore, new Item.Properties().maxStackSize(64).group(BlockTab.instance)).setRegistryName("orange_ore"));
+		event.getRegistry().register(new BlockItem(quarry, new Item.Properties().maxStackSize(64).group(BlockTab.instance)).setRegistryName("quarry"));
 	}
 }
