@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "mc104:blocks/pool_table",
-		"particle": "block/green_wool"
+		"0": "mc104:blocks/pool_table_lblue",
+		"particle": "block/light_blue_wool"
 	},
 	"elements": [
 		{

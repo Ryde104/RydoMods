@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mc104:block/pool_table_red" },
+        "facing=south": { "model": "mc104:block/pool_table_red", "y": 180 },
+        "facing=west":  { "model": "mc104:block/pool_table_red", "y": 270 },
+        "facing=east":  { "model": "mc104:block/pool_table_red", "y": 90 }
+    }
+}

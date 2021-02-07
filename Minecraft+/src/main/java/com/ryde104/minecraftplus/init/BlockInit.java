@@ -24,6 +24,14 @@ public class BlockInit
 			() -> new SpecialBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f)
 					.harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).lightValue(1)));
 	
+	public static final RegistryObject<Block> POOL_TABLE_RED = BLOCKS.register("pool_table_red",
+			() -> new SpecialBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f)
+					.harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).lightValue(1)));
+	
+	public static final RegistryObject<Block> POOL_TABLE_LBLUE = BLOCKS.register("pool_table_lblue",
+			() -> new SpecialBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f)
+					.harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).lightValue(1)));
+	
 	
 	//Torch Blocks
 	public static final RegistryObject<ModTorchBlock> BIRCH_TORCH = BLOCKS.register("birch_torch",
