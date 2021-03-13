@@ -1,0 +1,6 @@
+{
+    "parent": "block/torch_wall",
+    "textures": {
+        "torch": "mc104:blocks/dark_oak_torch"
+    }
+}

@@ -26,7 +26,16 @@ public class ClientEventBusSubscriber {
 		
 		
 		RenderTypeLookup.setRenderLayer(BlockInit.BIRCH_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.SPRUCE_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.DARK_OAK_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.ACACIA_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.JUNGLE_TORCH.get(), RenderType.getCutout());
+		
 		RenderTypeLookup.setRenderLayer(BlockInit.BIRCH_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.SPRUCE_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.DARK_OAK_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.ACACIA_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockInit.JUNGLE_WALL_TORCH.get(), RenderType.getCutout());
 		
 		
 		//RenderTypeLookup.setRenderLayer(BlockInit.EXAMPLE_LADDER.get(), RenderType.getCutout());

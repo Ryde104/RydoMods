@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"mc104:birch_stick",
+		"mc104:spruce_stick",
+		"mc104:dark_oak_stick",
+		"mc104:acacia_stick",
+		"mc104:jungle_stick",
+		"minecraft:stick"
+	]
+}

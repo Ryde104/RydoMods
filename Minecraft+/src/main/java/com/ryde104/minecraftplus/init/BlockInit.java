@@ -36,8 +36,36 @@ public class BlockInit
 	//Torch Blocks
 	public static final RegistryObject<ModTorchBlock> BIRCH_TORCH = BLOCKS.register("birch_torch",
 			() -> new ModTorchBlock(Block.Properties.from(Blocks.TORCH)));
+	
+	public static final RegistryObject<ModTorchBlock> SPRUCE_TORCH = BLOCKS.register("spruce_torch",
+			() -> new ModTorchBlock(Block.Properties.from(Blocks.TORCH)));
+	
+	public static final RegistryObject<ModTorchBlock> DARK_OAK_TORCH = BLOCKS.register("dark_oak_torch",
+			() -> new ModTorchBlock(Block.Properties.from(Blocks.TORCH)));
+	
+	public static final RegistryObject<ModTorchBlock> ACACIA_TORCH = BLOCKS.register("acacia_torch",
+			() -> new ModTorchBlock(Block.Properties.from(Blocks.TORCH)));
+	
+	public static final RegistryObject<ModTorchBlock> JUNGLE_TORCH = BLOCKS.register("jungle_torch",
+			() -> new ModTorchBlock(Block.Properties.from(Blocks.TORCH)));
+
+	
+	//Torch WallBlocks
 
 	public static final RegistryObject<ModWallTorchBlock> BIRCH_WALL_TORCH = BLOCKS.register("birch_wall_torch",
 			() -> new ModWallTorchBlock(Block.Properties.from(Blocks.WALL_TORCH)));
+	
+	public static final RegistryObject<ModWallTorchBlock> SPRUCE_WALL_TORCH = BLOCKS.register("spruce_wall_torch",
+			() -> new ModWallTorchBlock(Block.Properties.from(Blocks.WALL_TORCH)));
+	
+	public static final RegistryObject<ModWallTorchBlock> DARK_OAK_WALL_TORCH = BLOCKS.register("dark_oak_wall_torch",
+			() -> new ModWallTorchBlock(Block.Properties.from(Blocks.WALL_TORCH)));
+	
+	public static final RegistryObject<ModWallTorchBlock> ACACIA_WALL_TORCH = BLOCKS.register("acacia_wall_torch",
+			() -> new ModWallTorchBlock(Block.Properties.from(Blocks.WALL_TORCH)));
+	
+	public static final RegistryObject<ModWallTorchBlock> JUNGLE_WALL_TORCH = BLOCKS.register("jungle_wall_torch",
+			() -> new ModWallTorchBlock(Block.Properties.from(Blocks.WALL_TORCH)));
+	
 
 }

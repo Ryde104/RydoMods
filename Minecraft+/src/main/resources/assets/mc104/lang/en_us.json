@@ -1,7 +1,19 @@
 {
-	"item.mc104.book": "Book",
+	"item.minecraft.stick": "Oak Stick",
 	"item.mc104.birch_stick": "Birch Stick",
+	"item.mc104.acacia_stick": "Acacia Stick",
+	"item.mc104.dark_oak_stick": "Dark Oak Stick",
+	"item.mc104.jungle_stick": "Jungle Stick",
+	"item.mc104.spruce_stick": "Spruce Stick",
+	
+	"block.minecraft.torch": "Oak Torch",
 	"block.mc104.birch_torch": "Birch Torch",
+	"block.mc104.acacia_torch": "Acacia Torch",
+	"block.mc104.dark_oak_torch": "Dark Oak Torch",
+	"block.mc104.jungle_torch": "Jungle Torch",
+	"block.mc104.spruce_torch": "Spruce Torch",
+	
 	"block.mc104.pool_table": "Pool Table",
+	
 	"itemGroup.minecraftplustab": "Minecraft+"
 }
